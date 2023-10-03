@@ -175,8 +175,7 @@ color: var(--ocean, #404bbf);
 
 .hero-button:hover,
 .hero-button:focus {
-    color: var(--white, #FFF);
-    background: var(--ocean, #404BBF);
+    background-color: var(--ocean, #404BBF);
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
         font-weight: 500;
