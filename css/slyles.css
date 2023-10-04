@@ -416,7 +416,7 @@ color: var(--ocean, #404bbf);
 
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--ocean);
+    background-color: var(--green);
 }
 
 .social-icon {
