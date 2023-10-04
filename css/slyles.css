@@ -92,7 +92,7 @@ img {
     gap: 40px;
 }
 
-.header-nav-link {
+.nav-link {
     color: var(--navyblue, #2E2F42);
     font-size: 16px;
     font-weight: 500;
@@ -100,15 +100,27 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
     display: inline-block;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-nav-link:hover,
-.header-nav-link:focus {
+.active-page {
+    position: relative;
+    color: var(--ocean);
+}
+.active-page::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--ocean);
+    border-radius: 2px;
+}
+.nav-link:hover,
+.nav-link:focus {
     color: var(--ocean, #404bbf);
         font-size: 16px;
         font-weight: 500;
