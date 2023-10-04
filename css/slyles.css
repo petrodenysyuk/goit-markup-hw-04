@@ -55,7 +55,7 @@ img {
 /* ---------reset end------------- */
 /* -----------Header------------ */
 .header {
-    
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     border-bottom: 1px solid var(--cornflower);
 }
 .header-logo{
@@ -148,8 +148,8 @@ color: var(--ocean, #404bbf);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-bg-img.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 1440px, 1440px;
-        width: 100%;
+        background-size: cover;
+        max-width: 1440px;
 }
 
 
@@ -223,10 +223,12 @@ color: var(--ocean, #404bbf);
 .advantages-wrapper {
     border: 1px solid var(--lightslate);
     border-radius: 4px;
-    width: 100%;
-    padding: 24px 100px;
     margin-bottom: 8px;
     background: var(--cloud);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
 }
 
 
@@ -280,7 +282,8 @@ color: var(--ocean, #404bbf);
 }
 
 .team-content {
-    padding: 32px 16px;
+    padding: 32px 0;
+
 }
 
 .team-name {
@@ -305,6 +308,7 @@ color: var(--ocean, #404bbf);
     display: flex;
     gap: 24px;
     flex-shrink: 0;
+    justify-content: center;
 }
 .trailing-links-item {
     width: 40px;
@@ -341,7 +345,10 @@ color: var(--ocean, #404bbf);
 
 .footer-wrapper {
     display: flex;
-    
+    align-items: baseline;
+}
+.footer-text-wrapper {
+    margin-right: 120px;
 }
 .footer-link {
     color: var(--iris, #4d5ae5);
@@ -373,9 +380,7 @@ color: var(--ocean, #404bbf);
     letter-spacing: 0.02em;
 
 }
-.social-wrapper {
-    margin-left: 120px;
-}
+
 .social-media-title {
     color: var(--white);
     font-size: 16px;
@@ -457,7 +462,7 @@ color: var(--ocean, #404bbf);
     position: relative;
     overflow: hidden;
 }
-.overlay {
+.hidden-text {
     background-color: var(--iris);
     color: var(--cloud);
     font-family: 'Roboto', sans-serif;
@@ -489,8 +494,8 @@ color: var(--ocean, #404bbf);
 .products-item:hover {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.products-item:hover .overlay {
-    transform: translateY(0);
+.products-item:hover .hidden-text {
+    transform: translateY(0%);
 }
 
 .product-content {
