@@ -116,6 +116,7 @@ img {
     left: 0;
     bottom: -1px;
     height: 4px;
+    width: 100%;
     background-color: var(--ocean);
     border-radius: 2px;
 }
@@ -157,11 +158,13 @@ color: var(--ocean, #404bbf);
         padding-top: 188px;
         padding-bottom: 188px;
         background: var(--navyblue, #2E2F42);
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero-bg-img.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero-bg-img.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         max-width: 1440px;
+        margin: 0 auto;
 }
 
 
